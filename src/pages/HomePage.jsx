@@ -17,6 +17,7 @@ function HomePage() {
         <SideBar/>
         <MainPage/>
         </div>
+        
     </div>
 
     );

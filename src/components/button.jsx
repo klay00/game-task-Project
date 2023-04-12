@@ -3,7 +3,7 @@ import '../App.css';
 function BouttonAdd({name}) {
     return (
         <>
-            <button type="submit">{name}</button>
+            <button className="botton-add" type="submit">{name}</button>
         </>
     );
 }

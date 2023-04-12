@@ -5,7 +5,8 @@
 
 body {
 
-  background-color: rgb(40, 39, 39);
+  background-color: rgb(40, 39, 39);  
+
 }
 .in-pages{
   display: flex;
@@ -13,7 +14,6 @@ body {
 
 .bodyy {
   width: 100%;
-  height: 100vh;
   background: linear-gradient(200deg, #9c02023c, #222223,#261b1b38);
 }
 nav{
@@ -48,7 +48,7 @@ nav .logo form input{
   color: white;
   margin-right: 30px;
 }
-nav .logo form button{
+.botton-add{
   height: 30px;
   border: none;
   border-radius: 8px;
@@ -108,12 +108,12 @@ nav .info img{
 
 .main{
   width: 100%;
-  height: 500px;
+  
   margin-right: 60px;
   display: grid;
-  grid-template-columns: 5fr 2fr;
-  grid-template-rows: 350px 100px;
-  gap: 10px;
+  grid-template-columns: 5fr 2fr ;
+  grid-template-rows: 350px 100px 300px;
+  gap: 20px;
 }
 .main div{
   border-radius: 20px;
@@ -133,25 +133,54 @@ nav .info img{
   display: flex;
   gap: 10px;
 }
+.main div:last-child{
+  grid-column: 1/3;
+}
 .main div.contant{
-  background-image: linear-gradient(
-    0deg,
-    hsl(315deg 73% 10%) 0%,
-    hsl(323deg 75% 16%) 7%,
-    hsl(332deg 80% 21%) 14%,
-    hsl(341deg 83% 27%) 21%,
-    hsl(350deg 86% 33%) 29%,
-    hsl(359deg 89% 39%) 36%,
-    hsl(8deg 92% 44%) 43%,
-    hsl(17deg 95% 50%) 50%,
-    hsl(22deg 96% 53%) 57%,
-    hsl(26deg 96% 56%) 64%,
-    hsl(31deg 97% 59%) 71%,
-    hsl(36deg 98% 61%) 79%,
-    hsl(41deg 99% 64%) 86%,
-    hsl(46deg 99% 67%) 93%,
-    hsl(50deg 100% 70%) 100%
-  );  display: flex;
+  background-image: linear-gradient(to left top, #f80c0c, #fe5a00, #ff8700, #fead00, #f9d000, #f5cd00, #f1c900, #edc600, #e69d00, #da7300, #c84800, #b20909);  
+  opacity: 0.8;
+  display: flex; 
   flex-direction: column;
+  padding-left: 20px;
+  color: white;
+  font-weight: bold;
   justify-content: space-around;
+}
+.main div.contant button{
+  width: 200px;
+  background-color: #222223;
+  height: 50px;
+  font-size: 20px;
+}
+
+
+.scroll-container {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+  gap: 20px;
+}
+.scroll-container img {
+  margin-left:  20px; 
+  border-radius: 20px;
+  height: 350px;
+  width: 200px;
+  aspect-ratio: 1/2;
+  object-fit: cover;
+}
+
+.scroll-content {
+  display: inline-block;
+  animation: scroll 20s linear infinite;
+
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-600%);
+  }
 }

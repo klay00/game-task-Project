@@ -1,4 +1,5 @@
 import './App.css';
+import Cardes from './components/Card';
 import HomePage from './pages/HomePage';
 
 
