@@ -36,7 +36,7 @@ nav .logo img{
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-right: 140px;
+  margin-right: 80px;
 }
 nav .logo form input{
   height: 30px;
@@ -70,10 +70,10 @@ nav .info img{
 
 .sidebar{
   width: 300px;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  gap: 250px;
+  padding-top: 50px;
   padding-left: 20px;
   
 }
@@ -101,4 +101,57 @@ nav .info img{
   border-left:coral solid  4px!important;
   color: coral!important;
   text-shadow: rgba(255, 127, 80, 0.881) 0 0 20px;
+}
+
+
+
+
+.main{
+  width: 100%;
+  height: 500px;
+  margin-right: 60px;
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-template-rows: 350px 100px;
+  gap: 10px;
+}
+.main div{
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+.main div img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 20px;
+}
+.main div:nth-child(1){
+  grid-row: 1/3;
+}
+.main div:nth-child(3){
+  display: flex;
+  gap: 10px;
+}
+.main div.contant{
+  background-image: linear-gradient(
+    0deg,
+    hsl(315deg 73% 10%) 0%,
+    hsl(323deg 75% 16%) 7%,
+    hsl(332deg 80% 21%) 14%,
+    hsl(341deg 83% 27%) 21%,
+    hsl(350deg 86% 33%) 29%,
+    hsl(359deg 89% 39%) 36%,
+    hsl(8deg 92% 44%) 43%,
+    hsl(17deg 95% 50%) 50%,
+    hsl(22deg 96% 53%) 57%,
+    hsl(26deg 96% 56%) 64%,
+    hsl(31deg 97% 59%) 71%,
+    hsl(36deg 98% 61%) 79%,
+    hsl(41deg 99% 64%) 86%,
+    hsl(46deg 99% 67%) 93%,
+    hsl(50deg 100% 70%) 100%
+  );  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }

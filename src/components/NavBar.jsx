@@ -1,6 +1,7 @@
 import React from "react";
 import '../App.css';
 import { useEffect, useState } from 'react';
+import BouttonAdd from "./button";
 function NavBar() {
 
 
@@ -13,7 +14,7 @@ function NavBar() {
                     <h1></h1>
                     <form action="">
                         <input type="text" name="" id="" placeholder="search for game" />
-                        <button type="submit">Search</button>
+                        <BouttonAdd name={'search'}/>
                     </form>
                 </div>
 
