@@ -1,7 +1,9 @@
+import { Router, BrowserRouter, Link, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Cardes from './components/Card';
 import HomePage from './pages/HomePage';
-
+import GamePage from './pages/GamePage'
+import NoPage from './pages/NoPage';
 
 
 function App() {
@@ -10,7 +12,21 @@ function App() {
   return (
 
     <div className='bodyy'>
-    <HomePage/>
+      <BrowserRouter>
+      <Routes>
+      <Route index element={<HomePage/>} />
+      <Route path='/GamePage' element={<GamePage/>} />
+      <Route path='/*' element={<NoPage/>} />
+      </Routes>
+        
+      
+
+      </BrowserRouter>
+
+
+
+
+
     </div>
   );
 }

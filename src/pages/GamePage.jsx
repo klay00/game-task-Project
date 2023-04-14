@@ -3,11 +3,11 @@ import '../App.css';
 import NavBar from "../components/NavBar";
 import SideBar from "../components/SideBar";
 
-function GamePage() {
+export default function GamePage() {
     return (
         <>
-        <NavBar/>
-        <SideBar/>
+        {/* <NavBar/>
+        <SideBar/> */}
         </>
     );
 }

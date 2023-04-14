@@ -206,6 +206,7 @@ nav .info img{
 .scroll-content {
   display: inline-block;
   animation: scroll 50s linear infinite;
+  background-color: #9c020294;
 
 }
 
@@ -219,4 +220,13 @@ nav .info img{
   100% {
     transform: translateX(0%);
 }
+}
+.page-not-found{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 40px;
 }
