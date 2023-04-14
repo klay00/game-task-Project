@@ -105,7 +105,7 @@ nav .info img{
   color: rgba(206, 203, 203, 0.682);
   text-decoration: none;
 }
-.side-btn{
+.sidebar button{
   background-color: transparent;
   border: none;
   display: flex;
@@ -229,11 +229,42 @@ nav .info img{
 }
 }
 .page-not-found{
-  height: 100vh;
+
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-size: 40px;
+}
+.game-page{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+
+}
+.game-page .game{
+  width: 180px;
+  height: 340px;
+  background-color: rgba(182, 182, 176, 0.564);
+  border-radius: 20px;
+  color: white;
+  overflow: hidden;
+}
+.game-page .game img{
+  height: 240px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  object-fit: cover;
+}
+.game-page .game span{
+  color: #1b1a1a;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 10px;
+}.game-page .game h5{
+
+  padding-left: 10px;
 }

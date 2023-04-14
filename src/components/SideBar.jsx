@@ -3,24 +3,17 @@ import '../App.css';
 import ButtonSidebar from "./buttonSidbar";
 
 
-function SideBar(params) {
-
-    const handelHomePage = () => {
-        <>
-        
-        </>
-    console.log('test');
-    }
+function SideBar() {
     return (
         <>
             <div className="sidebar">
                 <div className="top">
-                    <ButtonSidebar path={'/'} name={'Home Page'} image={"./images/star.png"} className={''} catev={true} />
-                    <ButtonSidebar path={'/GamePage'} name={'Games Page'} image={"./images/catogares.png"} catev={true} className={''} />
+                    <ButtonSidebar path={'/'} name={'Home Page'} image={"./images/star.png"} className={''}  />
+                    <ButtonSidebar path={'/GamePage'} name={'Games Page'} image={"./images/catogares.png"}  className={''} />
                 </div>
                 <div className="down">
-                    <ButtonSidebar path={'kf'} name={'Setting'} image={"./images/setting.png"} catev={true} className={''} />
-                    <ButtonSidebar path={'df'} name={'Help'} image={"./images/down.png"} catev={true} className={''} />
+                    <ButtonSidebar path={'kf'} name={'Setting'} image={"./images/setting.png"}  className={''} />
+                    <ButtonSidebar path={'df'} name={'Help'} image={"./images/down.png"}  className={''} />
                 </div>
             </div>
         </>

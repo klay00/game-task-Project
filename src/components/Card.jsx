@@ -1,26 +1,7 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
+
 function Cardes() {
-
-//     const [prodect, setprodect] = useState([]);
-
-//   useEffect(()=>{
-//     axios.get('https://fakestoreapi.com/products').then((response)=>{
-//         setprodect(response.data);
-       
-//     })
-//   },[])
-
     return (
-        <>
-            {/* <div className="scroll-container">
-                {
-                    prodect.map((imagee)=>{
-                        console.log(imagee.image);
-                        <img className="scroll-content" src={imagee.image} key={imagee.id} alt="" />
-                    })
-                }
-            </div> */}
+        <>           
             <div className="scroll-container">
                 <img className="scroll-content" src="https://wallpaper.dog/large/17112707.jpg" alt="" />
                 <img className="scroll-content" src="https://wallpaper.dog/large/10910251.jpg" alt="" />
