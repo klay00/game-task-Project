@@ -1,31 +1,25 @@
 import React from "react";
 import '../App.css';
+import ButtonSidebar from "./buttonSidbar";
+
 
 function SideBar(params) {
+
+    const handelHomePage=()=>{
+        
+    }
     return (
         <>
             <div className="sidebar">
                 <div className="top">
-                    <button className="orange-border">
-                        <img src="./images/star.png" alt="" />
-                       <h3>Home Page</h3>
-                    </button>
-                    <button>
-                        <img src="./images/catogares.png" alt="" />
-                        <h3>Games Page</h3>
+                <ButtonSidebar event={handelHomePage} name={'Home Page'} image={"./images/star.png"} className={'orange-border'}/>
+                <ButtonSidebar event={''} name={'Games Page'} image={"./images/catogares.png"} className={''}/>
 
-                    </button>
                 </div>
                 <div className="down">
-                <button>
-                        <img src="./images/setting.png" alt="" />
-                        <h3>Setting</h3>
-                    </button>
-                    <button>
-                        <img src="./images/down.png" alt="" />
-                        <h3>Help</h3>
-
-                    </button>
+                <ButtonSidebar event={''} name={'Setting'} image={"./images/setting.png"} className={''}/>
+                <ButtonSidebar event={''} name={'Help'} image={"./images/down.png"} className={''}/>
+                   
                 </div>
             </div>
         </>

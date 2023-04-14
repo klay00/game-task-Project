@@ -14,15 +14,15 @@ function NavBar() {
                     <h1></h1>
                     <form action="">
                         <input type="text" name="" id="" placeholder="search for game" />
-                        <BouttonAdd name={'search'}/>
+                        <BouttonAdd name={'search'} type='submit' />
                     </form>
                 </div>
 
                 <div className="info">
-                <img src="./images/like.png" alt="" />
-                <img src="./images/shop.png" alt="" />
-                <img src="./images/message.png" alt="" />
-                
+                    <img src="./images/like.png" alt="" />
+                    <img src="./images/shop.png" alt="" />
+                    <img src="./images/message.png" alt="" />
+
 
                 </div>
 
