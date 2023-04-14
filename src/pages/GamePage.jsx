@@ -6,8 +6,8 @@ import SideBar from "../components/SideBar";
 export default function GamePage() {
     return (
         <>
-        {/* <NavBar/>
-        <SideBar/> */}
+        <NavBar/>
+        <SideBar/>
         </>
     );
 }
