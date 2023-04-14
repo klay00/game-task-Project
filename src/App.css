@@ -14,8 +14,25 @@ body {
 
 .bodyy {
   width: 100%;
-  background: linear-gradient(200deg, #9c02023c, #222223,#261b1b38);
+  background: linear-gradient(-45deg, #9c020294, #232322bc,#261b1b95);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+
 }
+
+
+@keyframes gradient {
+0% {
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
+}
+
 nav{
   display: flex;
   height: 70px;
@@ -137,7 +154,6 @@ nav .info img{
   grid-column: 1/3;
 }
 .main div.contant{
-  background-image: linear-gradient(to left top, #f80c0c, #fe5a00, #ff8700, #fead00, #f9d000, #f5cd00, #f1c900, #edc600, #e69d00, #da7300, #c84800, #b20909);  
   opacity: 0.8;
   display: flex; 
   flex-direction: column;
@@ -145,7 +161,24 @@ nav .info img{
   color: white;
   font-weight: bold;
   justify-content: space-around;
+  background: linear-gradient(-45deg, #f80c0c, #fe5a00, #ffe600,#b20909, #fead00 );
+  background-size: 400% 400%;
+  animation: gradient 10s linear infinite;
+
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 .main div.contant button{
   width: 200px;
   background-color: #222223;
@@ -166,13 +199,13 @@ nav .info img{
   border-radius: 20px;
   height: 350px;
   width: 200px;
-  aspect-ratio: 1/2;
+  aspect-ratio: 2/3;
   object-fit: cover;
 }
 
 .scroll-content {
   display: inline-block;
-  animation: scroll 20s linear infinite;
+  animation: scroll 50s linear infinite;
 
 }
 
@@ -180,7 +213,10 @@ nav .info img{
   0% {
       transform: translateX(0%);
   }
-  100% {
-      transform: translateX(-600%);
+  50% {
+      transform: translateX(-700%);
   }
+  100% {
+    transform: translateX(0%);
+}
 }
