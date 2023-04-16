@@ -31,6 +31,7 @@ export default function GamePage() {
                 
                 <div className="game-page">
                     {
+                        product==''?<div className="loging">loding</div>:
                         product.map(product => {
                             return (
                                 <div key={product.id} className='game'>
