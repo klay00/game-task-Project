@@ -1,20 +1,21 @@
 import { useFormik } from "formik";
-import {useSchema} from '../components/ValedationLogIn'
+import { Link } from "react-router-dom";
+import { useSchema } from '../components/ValedationLogIn'
 
 export default function LogInPage() {
-
     const formik = useFormik({
         initialValues: {
             email: '',
             password: ''
         }, onSubmit: value => {
             alert(JSON.stringify(value));
+            <Link to={'/'}>ddd</Link>
 
         }, validationSchema: useSchema,
     })
     return (
         <>
-            <div>
+            <div className="login-page">
 
                 <form onSubmit={formik.handleSubmit}>
                     <input
@@ -22,7 +23,7 @@ export default function LogInPage() {
                         value={formik.values.email}
                         type="text"
                         name="email"
-                        placeholder="emil" />
+                        placeholder="email" />
                     {formik.errors.email ? formik.errors.email : ""}
 
                     <input
@@ -33,8 +34,10 @@ export default function LogInPage() {
                         placeholder="password" />
                     {formik.errors.password ? formik.errors.password : ""}
 
-
-                    <button type="submit">Login</button>
+                    <button type="submit">
+                        
+                        Log in
+                    </button>
                 </form>
 
             </div>

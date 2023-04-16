@@ -298,3 +298,28 @@ nav .info img{
     transform: rotateY(3600deg);
   }
 }
+.login-page{
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.login-page form{
+  display: flex;
+  flex-direction: column; 
+  width: 400px;
+  gap: 20px;
+}
+.login-page form input,
+.login-page form button
+{
+  height: 30px;
+  border-radius: 8px;
+  padding-left: 5px;
+  border: none;
+  background-color: #59595a74;
+  color: white;
+}
+.login-page form button:hover{
+  background-color: #6d131374;
+
+}
