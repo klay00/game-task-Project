@@ -1,7 +1,7 @@
 import React from "react";
 
 function Cardes() {
-    const product = ([
+    const product=([
         {
             image: "https://wallpaper.dog/large/17112707.jpg",
         }, {

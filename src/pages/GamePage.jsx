@@ -21,10 +21,7 @@ export default function GamePage() {
     }, [])
     return (
         <>
-
-
-
-            <NavBar />
+           <NavBar />
             <div className="in-pages">
                 <SideBar />
 

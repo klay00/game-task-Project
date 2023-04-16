@@ -1,6 +1,8 @@
 import React from "react";
 import '../App.css';
 import BouttonAdd from "./button";
+import { Link } from 'react-router-dom';
+
 function NavBar() {
 
 
@@ -19,7 +21,7 @@ function NavBar() {
                 <div className="info">
                     <img src="./images/like.png" alt="" />
                     <img src="./images/shop.png" alt="" />
-                    <img src="./images/message.png" alt="" />
+                    <Link to={'/LogInPage'}>Log in</Link>
 
 
                 </div>

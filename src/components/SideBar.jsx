@@ -8,12 +8,12 @@ function SideBar() {
         <>
             <div className="sidebar">
                 <div className="top">
-                    <ButtonSidebar path={'/'} name={'Home Page'} image={"./images/star.png"} className={''}  />
-                    <ButtonSidebar path={'/GamePage'} name={'Games Page'} image={"./images/catogares.png"}  className={''} />
+                    <ButtonSidebar  path={'/'} name={'Home Page'} image={"./images/star.png"} />
+                    <ButtonSidebar path={'/GamePage'} name={'Games Page'} image={"./images/catogares.png"}   />
                 </div>
                 <div className="down">
-                    <ButtonSidebar path={'kf'} name={'Setting'} image={"./images/setting.png"}  className={''} />
-                    <ButtonSidebar path={'df'} name={'Help'} image={"./images/down.png"}  className={''} />
+                    <ButtonSidebar path={'kf'} name={'Setting'} image={"./images/setting.png"} />
+                    <ButtonSidebar path={'df'} name={'Help'} image={"./images/down.png"} />
                 </div>
             </div>
         </>
