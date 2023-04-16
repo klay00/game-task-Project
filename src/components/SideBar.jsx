@@ -1,9 +1,9 @@
-import React from "react";
 import '../App.css';
 import ButtonSidebar from "./buttonSidbar";
 
 
 function SideBar() {
+
     return (
         <>
             <div className="sidebar">
