@@ -1,9 +1,9 @@
 import { useFormik } from "formik";
 import * as Yup from 'yup';
 
-const useSchema=Yup.object().shape({
-    email: Yup.string().email().max(20,'most be large then 20 charecter').min(6,'most be less then 6 charecter').required(),
-    password:Yup.string().max(20,'most be large then 20 charecter').min(6,'most be less then 6 charecter').required(),
+const useSchema = Yup.object().shape({
+    email: Yup.string().email().max(20, 'most be less then 20 charecter').min(6, 'most be large then 6 charecter').required(),
+    password: Yup.string().max(20, 'most be less then 20 charecter').min(6, 'most be large then 6 charecter').required(),
 })
 
 export default function LogInPage() {
@@ -14,8 +14,8 @@ export default function LogInPage() {
             password: ''
         }, onSubmit: value => {
             alert(JSON.stringify(value));
-           
-        },validationSchema:useSchema,
+
+        }, validationSchema: useSchema,
     })
     return (
         <>
@@ -28,6 +28,7 @@ export default function LogInPage() {
                         type="text"
                         name="email"
                         placeholder="emil" />
+                    {formik.errors.email ? formik.errors.email : ""}
 
                     <input
                         onChange={formik.handleChange}
@@ -35,6 +36,8 @@ export default function LogInPage() {
                         type="password"
                         name="password"
                         placeholder="password" />
+                    {formik.errors.password ? formik.errors.password : ""}
+
 
                     <button type="submit">Login</button>
                 </form>
