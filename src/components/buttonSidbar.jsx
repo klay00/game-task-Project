@@ -6,7 +6,7 @@ export default function ButtonSidebar({ image, name, path, className }) {
     const [isActive,setActive]=useState(false);
 
     const handelActive=(()=>{
-      setActive(true);
+      setActive(current => !current);
     });
 
     return (<>

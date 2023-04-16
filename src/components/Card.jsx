@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 function Cardes() {
-    const [product, setProducr] = useState([
+    const product = ([
         {
             image: "https://wallpaper.dog/large/17112707.jpg",
         }, {
