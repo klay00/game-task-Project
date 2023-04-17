@@ -21,7 +21,7 @@ function NavBar() {
                 <div className="info">
                     <img src="./images/like.png" alt="" />
                     <img src="./images/shop.png" alt="" />
-                    <Link to={'/LogInPage'}>Log in</Link>
+                    <Link className="botton-add" to={'/LogInPage'}>Log in</Link>
 
 
                 </div>

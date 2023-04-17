@@ -73,6 +73,11 @@ nav .logo form input{
   background-color: #ffffff38;
   color: white;
   width: 80px;
+  text-align: center;
+  text-decoration: none;
+}
+.botton-add :hover{
+  background-color: #ffffff74;
 }
 nav .info{
     display: flex;
