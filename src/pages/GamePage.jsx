@@ -1,9 +1,13 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { LazyLoadComponent, LazyLoadImage } from "react-lazy-load-image-component";
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import '../App.css';
 import LodingComp from "../components/loding";
 import NavBar from "../components/NavBar";
 import SideBar from "../components/SideBar";
+
 
 export default function GamePage() {
 
@@ -22,17 +26,21 @@ export default function GamePage() {
     }, [])
     return (
         <>
-           <NavBar />
+            <NavBar />
             <div className="in-pages">
                 <SideBar />
 
                 <div className="game-page">
                     {
-                        product == '' ? <LodingComp/> :
+                        product == '' ? <LodingComp /> :
                             product.map(product => {
                                 return (
                                     <div key={product.id} className='game'>
-                                        <img loading="lazy" src={product.image} alt="" />
+                                        <LazyLoadImage
+                                            loading="lazy"
+                                            src={product.image} alt=""
+                                            useEffect="blur"
+                                        />
                                         <h5>{product.title}</h5>
                                         <span>{product.price}$</span>
                                     </div>
