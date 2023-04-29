@@ -32,7 +32,7 @@ export default function GamePage() {
                             product.map(product => {
                                 return (
                                     <div key={product.id} className='game'>
-                                        <img src={product.image} alt="" />
+                                        <img loading="lazy" src={product.image} alt="" />
                                         <h5>{product.title}</h5>
                                         <span>{product.price}$</span>
                                     </div>
