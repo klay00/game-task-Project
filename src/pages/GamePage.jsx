@@ -1,12 +1,12 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { LazyLoadComponent, LazyLoadImage } from "react-lazy-load-image-component";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import 'react-lazy-load-image-component/src/effects/blur.css';
-
 import '../App.css';
 import LodingComp from "../components/loding";
 import NavBar from "../components/NavBar";
 import SideBar from "../components/SideBar";
+
 
 
 export default function GamePage() {
