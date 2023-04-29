@@ -9,8 +9,6 @@ export default function LogInPage() {
             password: ''
         }, onSubmit: value => {
             alert(JSON.stringify(value));
-            <Link to={'/'}>ddd</Link>
-
         }, validationSchema: useSchema,
     })
     return (

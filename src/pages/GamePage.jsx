@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import '../App.css';
+import LodingComp from "../components/loding";
 import NavBar from "../components/NavBar";
 import SideBar from "../components/SideBar";
 
@@ -27,7 +28,7 @@ export default function GamePage() {
 
                 <div className="game-page">
                     {
-                        product == '' ? <div class="lds-circle"><div></div></div> :
+                        product == '' ? <LodingComp/> :
                             product.map(product => {
                                 return (
                                     <div key={product.id} className='game'>
