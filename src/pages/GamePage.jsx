@@ -32,7 +32,7 @@ export default function GamePage() {
 
                 <div className="game-page">
                     {
-                        product == '' ? <LodingComp /> :
+                        product == '' ? <LodingComp/> :
                             product.map(product => {
                                 return (
                                     <div key={product.id} className='game'>
@@ -49,10 +49,6 @@ export default function GamePage() {
                     }
                 </div>
             </div>
-
-
-
-
         </>
     );
 }
