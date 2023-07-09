@@ -329,3 +329,8 @@ nav .info img{
   background-color: #6d131374;
 
 }
+
+.card-btn-hiden{
+  background-color: transparent;
+  border: none;
+}
