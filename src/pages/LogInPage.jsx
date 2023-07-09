@@ -1,6 +1,6 @@
 import { useFormik } from "formik";
-import { Link } from "react-router-dom";
-import { useSchema } from '../components/ValedationLogIn'
+import { useSchema } from '../components/ValedationLogIn';
+import db from '../services/firebasefirestor';
 
 export default function LogInPage() {
     const formik = useFormik({
