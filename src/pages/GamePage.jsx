@@ -32,18 +32,22 @@ export default function GamePage() {
 
                 <div className="game-page">
                     {
-                        product == '' ? <LodingComp/> :
+                        product == '' ? <LodingComp /> :
                             product.map(product => {
                                 return (
-                                    <div key={product.id} className='game'>
-                                        <LazyLoadImage
-                                            loading="lazy"
-                                            src={product.image} alt=""
-                                            useEffect="blur"
-                                        />
-                                        <h5>{product.title}</h5>
-                                        <span>{product.price}$</span>
-                                    </div>
+                                    <>
+                                        <button className="card-btn-hiden" onClick={(()=>console.log(product.id))}>
+                                            <div key={product.id} className='game'>
+                                                <LazyLoadImage
+                                                    loading="lazy"
+                                                    src={product.image} alt=""
+                                                    useEffect="blur"
+                                                />
+                                                <h5>{product.title}</h5>
+                                                <span>{product.price}$</span>
+                                            </div>
+                                        </button>
+                                    </>
                                 );
                             })
                     }
